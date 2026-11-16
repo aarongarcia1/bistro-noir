@@ -1,6 +1,6 @@
 /* ==========================================================================
    Bistro Noir — interacciones
-   Proyecto de demostración · PixelCraft Studio
+   Proyecto conceptual · VELORA Creative Studio
    ========================================================================== */
 (() => {
   'use strict';

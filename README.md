@@ -1,8 +1,10 @@
 # Bistro Noir
 
-**Web de demostración de un restaurante de alta cocina, diseñada y desarrollada por PixelCraft Studio.**
+**Proyecto conceptual del portfolio de VELORA Creative Studio: web para un restaurante ficticio de alta cocina.**
 
-> **Aviso:** Bistro Noir es un **restaurante ficticio**. Esta web es una **demostración comercial de PixelCraft Studio**.
+🔗 Web publicada: <https://aarongarcia1.github.io/bistro-noir/>
+
+> **Aviso:** Bistro Noir es un **restaurante ficticio** y **no es un cliente real**. Esta web es un **proyecto conceptual del portfolio de VELORA Creative Studio**.
 > La dirección, el teléfono, el correo, los horarios, el nombre del chef y los perfiles sociales son datos de ejemplo.
 > El formulario de reserva no envía información a ningún sitio.
 
@@ -11,7 +13,7 @@
 ## Sobre el proyecto
 
 Bistro Noir es una web *one-page* pensada para mostrar a restaurantes, cafeterías y pequeños negocios
-el nivel de diseño que PixelCraft Studio puede ofrecer: estética editorial, fotografía grande,
+el nivel de diseño que VELORA Creative Studio puede ofrecer: estética editorial, fotografía grande,
 tipografía cuidada y animaciones sutiles, sin plantillas ni dependencias externas de pago.
 
 ### Secciones
@@ -28,20 +30,20 @@ tipografía cuidada y animaciones sutiles, sin plantillas ni dependencias extern
 ### Tecnología
 
 - **HTML5, CSS3 y JavaScript** puro: sin frameworks, sin librerías, sin pasos de compilación.
-- **Google Fonts** (Playfair Display y DM Sans): gratuitas, sin registro.
+- **Google Fonts** (Cormorant Garamond y DM Sans): gratuitas, sin registro.
 - Imágenes de **Unsplash** (licencia gratuita), optimizadas en **WebP** y en varios tamaños (`srcset`).
 
 ### Identidad visual
 
 | Uso | Color |
 |---|---|
-| Negro carbón (fondo) | `#11110F` |
-| Gris oscuro (secciones) | `#191916` |
-| Dorado champagne (acentos) | `#C6A36B` |
-| Blanco cálido (texto) | `#F5F0E8` |
-| Gris secundario | `#AAAAAA` |
+| Negro carbón (fondo) | `#111111` |
+| Dorado (acentos) | `#C6A66B` |
+| Blanco cálido (texto) | `#F4F0E8` |
+| Gris oscuro (secciones alternas) | `#191919` |
+| Gris secundario (textos de apoyo) | `#AAAAAA` |
 
-Títulos en *Playfair Display*, textos en *DM Sans*.
+Títulos en *Cormorant Garamond*, textos en *DM Sans*. Paleta y tipografías de la identidad de VELORA Creative Studio.
 
 ### Calidad
 
@@ -165,8 +167,7 @@ Recarga la página del repositorio en GitHub: deberías ver todos los archivos.
 https://TU-USUARIO.github.io/bistro-noir/
 ```
 
-Ejemplo: si tu usuario es `pixelcraft-studio`, la web estará en
-`https://pixelcraft-studio.github.io/bistro-noir/`.
+Este proyecto está publicado en <https://aarongarcia1.github.io/bistro-noir/>.
 
 > Si quisieras la web en la raíz (`https://TU-USUARIO.github.io/`), el repositorio tendría que llamarse
 > exactamente `TU-USUARIO.github.io`. Para una demo de portfolio es mejor `bistro-noir`,
@@ -224,6 +225,6 @@ GitHub Pages se actualiza solo en uno o dos minutos. Si no ves el cambio, recarg
 
 ## Créditos
 
-- Diseño y desarrollo: **PixelCraft Studio** © 2026.
+- Diseño y desarrollo: **VELORA Creative Studio** © 2026. Bistro Noir es un proyecto conceptual, no un cliente real.
 - Fotografías: [Unsplash](https://unsplash.com) (licencia Unsplash: uso gratuito, comercial y no comercial).
 - Tipografías: [Google Fonts](https://fonts.google.com) (SIL Open Font License).
