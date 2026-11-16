@@ -1,0 +1,430 @@
+<!doctype html>
+<!--
+  Bistro Noir — restaurante FICTICIO.
+  Web de demostración creada por PixelCraft Studio. Todos los datos de contacto,
+  direcciones, horarios y perfiles sociales son de ejemplo.
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bistro Noir — Restaurante de alta cocina | Demo PixelCraft Studio</title>
+  <meta name="description" content="Bistro Noir: cocina de temporada, brasa de encina y una bodega cuidada en un ambiente íntimo. Proyecto de demostración diseñado por PixelCraft Studio.">
+  <meta name="theme-color" content="#11110F">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Bistro Noir">
+  <meta property="og:title" content="Bistro Noir — El sabor de lo extraordinario">
+  <meta property="og:description" content="Una experiencia gastronómica donde cada detalle está pensado para sorprenderte.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+
+  <link rel="preload" as="image" href="assets/images/hero-1280.webp"
+        imagesrcset="assets/images/hero-768.webp 768w, assets/images/hero-1280.webp 1280w, assets/images/hero-2400.webp 2400w"
+        imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="site-header" id="cabecera">
+    <div class="site-header__inner container">
+      <a class="logo" href="#inicio" aria-label="Bistro Noir, ir al inicio">
+        BISTRO <span>NOIR</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="main-nav__list">
+          <li><a href="#inicio" class="main-nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="main-nav__link">Nosotros</a></li>
+          <li><a href="#carta" class="main-nav__link">Carta</a></li>
+          <li><a href="#contacto" class="main-nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--gold btn--sm site-header__cta" href="#reservar">Reservar mesa</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-movil">
+        <span class="menu-toggle__label">Menú</span>
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil a pantalla completa -->
+  <div class="mobile-menu" id="menu-movil" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+    <nav aria-label="Navegación móvil">
+      <ul class="mobile-menu__list">
+        <li><a href="#inicio"><span>01</span>Inicio</a></li>
+        <li><a href="#nosotros"><span>02</span>Nosotros</a></li>
+        <li><a href="#carta"><span>03</span>Carta</a></li>
+        <li><a href="#contacto"><span>04</span>Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a class="btn btn--gold" href="#reservar">Reservar mesa</a>
+      <p>Martes a domingo · 13:00 — 23:30</p>
+    </div>
+  </div>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img src="assets/images/hero-1280.webp"
+             srcset="assets/images/hero-768.webp 768w, assets/images/hero-1280.webp 1280w, assets/images/hero-2400.webp 2400w"
+             sizes="100vw" width="2400" height="1600" fetchpriority="high"
+             alt="Comedor de Bistro Noir con mesas de madera oscura, sillas tapizadas y luz cálida">
+      </div>
+
+      <div class="hero__content container">
+        <p class="eyebrow hero__eyebrow"><span class="line" aria-hidden="true"></span>Cocina de autor · Desde 2014</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line"><span>El sabor de lo</span></span>
+          <span class="hero__line"><em>extraordinario</em></span>
+        </h1>
+        <p class="hero__subtitle">Descubre una experiencia gastronómica donde cada detalle está pensado para sorprenderte.</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#carta">Descubrir nuestra carta</a>
+          <a class="link-arrow" href="#reservar">Reservar mesa <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#nosotros" aria-label="Bajar a la sección Nosotros">
+        <span aria-hidden="true">Desliza</span>
+      </a>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="section about" id="nosotros" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="eyebrow" data-reveal><span class="num">01</span>Nosotros</p>
+          <h2 class="section-title" id="about-title" data-reveal>Pasión por la <em>gastronomía</em></h2>
+          <p class="lead" data-reveal>En Bistro Noir combinamos ingredientes de calidad, creatividad y tradición para crear momentos únicos.</p>
+          <p data-reveal>Cada mañana elegimos el producto en el mercado y dejamos que la temporada decida la carta. Técnica precisa, fuego lento y una sala que cuida de ti sin que lo notes.</p>
+
+          <dl class="about__facts" data-reveal>
+            <div><dt>Producto</dt><dd>De temporada y proximidad</dd></div>
+            <div><dt>Cocina</dt><dd>Brasa de encina y técnica francesa</dd></div>
+            <div><dt>Sala</dt><dd>Solo 36 cubiertos por servicio</dd></div>
+          </dl>
+
+          <p class="signature" data-reveal>
+            <span class="signature__name">Marc Vidal</span>
+            <span class="signature__role">Chef ejecutivo · personaje ficticio</span>
+          </p>
+        </div>
+
+        <div class="about__media">
+          <figure class="about__img about__img--main" data-reveal>
+            <img src="assets/images/chef-1000.webp"
+                 srcset="assets/images/chef-600.webp 600w, assets/images/chef-1000.webp 1000w"
+                 sizes="(min-width: 960px) 34vw, 80vw" width="1000" height="1250" loading="lazy" decoding="async"
+                 alt="Chef emplatando bajo lámparas de cobre en la cocina abierta">
+          </figure>
+          <figure class="about__img about__img--detail" data-reveal>
+            <img src="assets/images/mise-en-place-500.webp"
+                 srcset="assets/images/mise-en-place-500.webp 500w, assets/images/mise-en-place-900.webp 900w"
+                 sizes="(min-width: 960px) 18vw, 45vw" width="900" height="1125" loading="lazy" decoding="async"
+                 alt="Manos cortando hierbas frescas sobre una tabla blanca">
+            <figcaption>Mise en place, 10:30 h</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARTA ============ -->
+    <section class="section menu" id="carta" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal><span class="num">02</span>La carta</p>
+          <h2 class="section-title" id="menu-title" data-reveal>Una carta breve, <em>pensada al detalle</em></h2>
+          <p class="section-head__intro" data-reveal>Tres platos que resumen nuestra forma de cocinar. La carta completa cambia con cada estación.</p>
+        </header>
+
+        <div class="menu__layout">
+          <!-- Vista previa de escritorio: cambia con hover / foco -->
+          <div class="menu__preview" aria-hidden="true">
+            <img class="is-active" data-dish="risotto" src="assets/images/risotto-1000.webp" width="1000" height="1250" loading="lazy" decoding="async" alt="">
+            <img data-dish="solomillo" src="assets/images/solomillo-810.webp" width="810" height="1013" loading="lazy" decoding="async" alt="">
+            <img data-dish="tarta" src="assets/images/tarta-chocolate-1000.webp" width="1000" height="1250" loading="lazy" decoding="async" alt="">
+            <span class="menu__preview-tag">Temporada otoño — invierno</span>
+          </div>
+
+          <ol class="dishes">
+            <li class="dish is-active" data-dish="risotto" tabindex="0">
+              <figure class="dish__img">
+                <img src="assets/images/risotto-600.webp" width="600" height="750" loading="lazy" decoding="async"
+                     alt="Risotto cremoso con setas y hierbas frescas en plato de cerámica">
+              </figure>
+              <div class="dish__body">
+                <span class="dish__num" aria-hidden="true">I</span>
+                <h3 class="dish__name">Risotto de temporada</h3>
+                <span class="dish__leader" aria-hidden="true"></span>
+                <p class="dish__price"><span class="visually-hidden">Precio: </span>16 €</p>
+                <p class="dish__desc">Arroz carnaroli, setas de otoño, parmesano de 24 meses y un toque de trufa negra.</p>
+                <p class="dish__tags">Vegetariano · Sin frutos secos</p>
+              </div>
+            </li>
+            <li class="dish" data-dish="solomillo" tabindex="0">
+              <figure class="dish__img">
+                <img src="assets/images/solomillo-600.webp" width="600" height="750" loading="lazy" decoding="async"
+                     alt="Solomillo a la brasa cortado en láminas sobre tabla de madera">
+              </figure>
+              <div class="dish__body">
+                <span class="dish__num" aria-hidden="true">II</span>
+                <h3 class="dish__name">Solomillo a la brasa</h3>
+                <span class="dish__leader" aria-hidden="true"></span>
+                <p class="dish__price"><span class="visually-hidden">Precio: </span>24 €</p>
+                <p class="dish__desc">Solomillo de ternera madurado, brasa de encina, chalotas glaseadas y jugo de asado.</p>
+                <p class="dish__tags">Recomendado con tinto de la casa</p>
+              </div>
+            </li>
+            <li class="dish" data-dish="tarta" tabindex="0">
+              <figure class="dish__img">
+                <img src="assets/images/tarta-chocolate-600.webp" width="600" height="750" loading="lazy" decoding="async"
+                     alt="Porción de tarta de chocolate negro con hilo de chocolate fundido">
+              </figure>
+              <div class="dish__body">
+                <span class="dish__num" aria-hidden="true">III</span>
+                <h3 class="dish__name">Tarta de chocolate</h3>
+                <span class="dish__leader" aria-hidden="true"></span>
+                <p class="dish__price"><span class="visually-hidden">Precio: </span>8 €</p>
+                <p class="dish__desc">Chocolate negro al 70 %, ganache templada, sal en escamas y crema de vainilla.</p>
+                <p class="dish__tags">Elaborado al momento</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <p class="menu__note" data-reveal>Carta de ejemplo con fines demostrativos. IVA incluido. Consulta alérgenos con nuestro equipo de sala.</p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCIA ============ -->
+    <section class="experience" id="experiencia" aria-labelledby="exp-title">
+      <div class="experience__banner">
+        <img src="assets/images/barra-1800.webp"
+             srcset="assets/images/barra-960.webp 960w, assets/images/barra-1800.webp 1800w"
+             sizes="100vw" width="1800" height="1125" loading="lazy" decoding="async"
+             alt="Barra de madera iluminada con lámparas colgantes y botellas en penumbra">
+        <div class="experience__banner-content container">
+          <p class="eyebrow" data-reveal><span class="num">03</span>La experiencia</p>
+          <h2 class="section-title" id="exp-title" data-reveal>Una noche que se <em>recuerda</em></h2>
+        </div>
+      </div>
+
+      <div class="container experience__body">
+        <blockquote class="experience__quote" data-reveal>
+          <p>«No servimos platos: servimos el tiempo que pasas en la mesa.»</p>
+        </blockquote>
+
+        <div class="experience__grid">
+          <figure class="exp-card exp-card--tall" data-reveal>
+            <div class="exp-card__img">
+              <img src="assets/images/coctel-500.webp"
+                   srcset="assets/images/coctel-500.webp 500w, assets/images/coctel-900.webp 900w"
+                   sizes="(min-width: 960px) 30vw, 90vw" width="900" height="1126" loading="lazy" decoding="async"
+                   alt="Bartender sirviendo un cóctel con hielo tallado y piel de naranja">
+            </div>
+            <figcaption>
+              <h3>La barra</h3>
+              <p>Coctelería clásica reinterpretada. Abre una hora antes que la cocina.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="exp-card exp-card--wide" data-reveal>
+            <div class="exp-card__img">
+              <img src="assets/images/vino-640.webp"
+                   srcset="assets/images/vino-640.webp 640w, assets/images/vino-1200.webp 1200w"
+                   sizes="(min-width: 960px) 40vw, 90vw" width="1200" height="800" loading="lazy" decoding="async"
+                   alt="Copas de vino tinto alzadas en un brindis">
+            </div>
+            <figcaption>
+              <h3>La bodega</h3>
+              <p>Más de 120 referencias, con especial atención a pequeños productores.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="exp-card exp-card--tall exp-card--offset" data-reveal>
+            <div class="exp-card__img">
+              <img src="assets/images/mesa-500.webp"
+                   srcset="assets/images/mesa-500.webp 500w, assets/images/mesa-900.webp 900w"
+                   sizes="(min-width: 960px) 26vw, 90vw" width="900" height="1125" loading="lazy" decoding="async"
+                   alt="Mesa servida con copas, pan artesano y un plato emplatado a la luz de las velas">
+            </div>
+            <figcaption>
+              <h3>La mesa</h3>
+              <p>Menú degustación de siete pasos, solo con reserva previa.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVAS Y CONTACTO ============ -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal><span class="num">04</span>Reservas y contacto</p>
+          <h2 class="section-title" id="contact-title" data-reveal>Te esperamos<br> <em>a la mesa</em></h2>
+        </header>
+
+        <p class="demo-notice" data-reveal>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 11v6M12 7.5v.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Bistro Noir es un restaurante ficticio creado como demostración por PixelCraft Studio. Los datos de contacto, la dirección y los horarios no son reales.
+        </p>
+
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal>
+            <div class="info-block">
+              <h3 class="info-block__title">Dirección</h3>
+              <address>
+                Calle de la Demostración, 12<br>
+                08001 Barcelona<br>
+                <span class="muted">(ubicación ficticia)</span>
+              </address>
+            </div>
+
+            <div class="info-block">
+              <h3 class="info-block__title">Contacto</h3>
+              <ul class="info-list">
+                <li><a href="tel:+34900000000">+34 900 000 000</a> <span class="muted">(demo)</span></li>
+                <li><a href="mailto:reservas@bistronoir.example">reservas@bistronoir.example</a></li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3 class="info-block__title">Horario <span class="muted">(ejemplo)</span></h3>
+              <table class="hours">
+                <caption class="visually-hidden">Horario de apertura de ejemplo</caption>
+                <tbody>
+                  <tr><th scope="row">Lunes</th><td>Cerrado</td></tr>
+                  <tr><th scope="row">Martes — Jueves</th><td>13:00 – 16:00 · 20:00 – 23:00</td></tr>
+                  <tr><th scope="row">Viernes — Sábado</th><td>13:00 – 16:00 · 20:00 – 23:30</td></tr>
+                  <tr><th scope="row">Domingo</th><td>13:00 – 16:30</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <form class="booking" id="reservar" novalidate aria-labelledby="booking-title" data-reveal>
+            <h3 class="booking__title" id="booking-title">Reservar mesa</h3>
+            <p class="booking__intro">Formulario de demostración: no envía datos a ningún sistema de reservas.</p>
+
+            <div class="field">
+              <label for="f-nombre">Nombre</label>
+              <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+              <p class="field__error" id="e-nombre" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Correo electrónico</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+              <p class="field__error" id="e-email" aria-live="polite"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-fecha">Fecha</label>
+                <input id="f-fecha" name="fecha" type="date" required>
+                <p class="field__error" id="e-fecha" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-hora">Hora</label>
+                <select id="f-hora" name="hora" required>
+                  <option value="">Elegir</option>
+                  <optgroup label="Comidas">
+                    <option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+                  </optgroup>
+                  <optgroup label="Cenas">
+                    <option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option>
+                  </optgroup>
+                </select>
+                <p class="field__error" id="e-hora" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-personas">Personas</label>
+                <select id="f-personas" name="personas" required>
+                  <option>1</option><option selected>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn--gold btn--block" type="submit">Solicitar reserva</button>
+            <p class="booking__alt">¿Grupo de más de 6? Escríbenos a <a href="mailto:reservas@bistronoir.example?subject=Reserva%20de%20grupo">reservas@bistronoir.example</a></p>
+
+            <div class="booking__status" role="status" aria-live="polite" tabindex="-1"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="logo logo--lg" href="#inicio">BISTRO <span>NOIR</span></a>
+          <p>Cocina de autor, producto de temporada y una sala pensada para alargar la sobremesa.</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Navegación secundaria">
+          <h2 class="site-footer__heading">Explorar</h2>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#carta">Carta</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__social">
+          <h2 class="site-footer__heading">Síguenos <span class="muted">(perfiles de ejemplo)</span></h2>
+          <ul class="social">
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (perfil de ejemplo, se abre en una pestaña nueva)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (perfil de ejemplo, se abre en una pestaña nueva)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v7h4v-7h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tripadvisor.es/" target="_blank" rel="noopener noreferrer" aria-label="Tripadvisor (perfil de ejemplo, se abre en una pestaña nueva)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="13" r="3.5"/><circle cx="17" cy="13" r="3.5"/><path d="M2.5 8.5c5.5-3 13.5-3 19 0M12 9l-1.5 2M12 9l1.5 2"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2026 Bistro Noir. Todos los derechos reservados.</p>
+        <p class="site-footer__demo"><strong>Bistro Noir es un restaurante ficticio.</strong> Esta web es una demostración de <strong>PixelCraft Studio</strong>. Fotografías: Unsplash.</p>
+        <a class="to-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
